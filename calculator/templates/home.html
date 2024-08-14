@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/tr/b/bd/%C4%B0yte_t%C3%BCrk%C3%A7e_logo.png" type="image/x-icon" />
+    <link rel="stylesheet"  type = "text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+<header class="header">
+    <div class="logo_container">
+        <img src="https://bhib.iyte.edu.tr/wp-content/uploads/sites/115/2018/09/iyte_logo-tur.png" alt="logo"
+             class="logo_img">
+    </div>
+    <h1 class="title"> IZTECH School of Foreign Languages GPA Calculator</h1>
+</header>
+<div class="center">
+    <form method="GET" action="gpa_result">
+        <div class="inputs">
+
+            <input type="number" name="Quiz1" class="input" step="0.01" min="0" max="50"
+                   placeholder="1.Term Quiz1 Grade" required>
+            <br> <br>
+            <input type="number" name="Quiz2" class="input" step="0.01" min="0" max="50" placeholder="1.Term Quiz2 Grade"
+                   required>
+            <br> <br>
+            <input type="number" name="SAG" class="input" step="0.01" min="0" max="20" placeholder="1.Term SAG Grade"
+                   required>
+            <br> <br>
+            <input type="number" name="Term_exam" class="input" step="0.01" min="0" max="100"
+                   placeholder="1.Term Exam Grade" required>
+            <br> <br>
+            <input type="number" name="Quiz1_2" class="input" step="0.01" min="0" max="20"
+                   placeholder="2.Term Quiz1 Grade" required>
+            <br> <br>
+            <input type="number" name="Quiz2_2" class="input" step="0.01" min="0" max="20"
+                   placeholder="2.Term Quiz2 Grade" required>
+            <br> <br>
+            <input type="number" name="SAG_2" class="input" step="0.01" min="0" max="20" placeholder="2.Term SAG Grade"
+                   required>
+            <br><br>
+            <input type="number" name="Term_exam_2" class="input" step="0.01" min="0" max="100"
+                   placeholder="2.Term Exam Grade" required>
+            <br> <br>
+            <input type="number" name="Final" class="input" step="0.01" min="0" max="100" placeholder="Final Grade"
+                   required>
+            <br> <br>
+
+        </div>
+        <div class="button_box">
+            <button type="submit" name="calculate" class="calc_button">Calculate</button>
+
+        </div>
+    </form>
+</div>
+{%block content%} {%endblock%}
+</body>
+
+
+

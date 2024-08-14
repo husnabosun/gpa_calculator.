@@ -1,0 +1,41 @@
+    body{
+    background: url("https://store.donanimhaber.com/07/c8/b8/07c8b8f68cfb3e201be9fd9014540d54.jpeg");
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .heading{
+     display:flex;
+     flex-direction: row;
+     position: fixed;
+     left: 50%;
+     top: 1%;
+     transform: translate(-50%, -1%);
+     color: gray
+     }
+     .home_button{
+     padding:10px 25px 10px 25px;
+     border-radius: 9px;
+     background-color: rgb(102, 153, 153);
+     color: white;
+     cursor:pointer;
+     border:none;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     }
+     .home_button:hover{
+     background-color: white;
+     color:rgb(102, 153, 153);
+     transition: 0.30s;
+     }
+    .center{
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+     text-align:center;
+     height:50vh
+     }

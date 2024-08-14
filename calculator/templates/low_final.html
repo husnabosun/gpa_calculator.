@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/tr/b/bd/%C4%B0yte_t%C3%BCrk%C3%A7e_logo.png" type="image/x-icon" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/low_final.css' %}">
+</head>
+<body>
+<div class="center">
+    <h1 class="heading"> Your final score is  insufficient to pass prep year.</h1>
+    <br><br>
+    <h1 class="score"> In-Year Average Score: {{in_year_score}}</h1>
+     <button class="home_button">
+         <a class="home_link" href="{% url 'home' %}">Go back</a>
+    </button>
+</div>
+{%block content%} {%endblock%}
+</body>
